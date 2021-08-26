@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	char sentence[50,2] = {'"',"Programming is like building a multilingual puzzle\n"};
 	puts(sentence);
