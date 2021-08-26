@@ -1,8 +1,8 @@
-	.file	"main.c"
+	.file	"1-main.c"
 	.text
 	.section	.rodata
 .LC0:
-	.string	"tail c"
+	.string	"Holberton School"
 	.text
 	.globl	main
 	.type	main, @function
