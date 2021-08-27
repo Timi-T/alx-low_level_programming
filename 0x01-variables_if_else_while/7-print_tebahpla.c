@@ -2,11 +2,12 @@
 /**
  * main - entry point
  *
- * return - always 0 (success)
+ * return: always 0 (success)
  */
 int main(void)
 {
 	int alp;
+
 	for (alp = 'z'; alp >= 'a'; alp--)
 	{
 		putchar(alp);
