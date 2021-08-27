@@ -9,14 +9,14 @@ int main(void)
 	int val;
 	int num;
 
-	for (val = 0; val <= 9; val++)
+	for (val = 48; val <= 57; val++)
 	{
 		putchar(val);
 	}
-	/*for (num = 'a'; num <= 'f'; num++)
+	for (num = 'a'; num <= 'f'; num++)
 	{
 		putchar(num);
 	}
 	putchar('\n');
-	return (0);*/
+	return (0);
 }
