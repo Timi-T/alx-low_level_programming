@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Success)
 */
-int main(void) 
+int main(void)
 {
 	char c;
 
@@ -13,5 +13,5 @@ int main(void)
 		putchar(c);
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
