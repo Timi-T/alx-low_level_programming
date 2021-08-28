@@ -25,10 +25,10 @@ int main(void)
 		{
 			printf("Last digit of %d is %d and is greater than 5\n", n, lastdigit);
 		}
-	}
 		else
 		{
 			printf("Last digit of %d is %d and is zero\n", n, lastdigit);
 		}
+	}
 	return (0);
 }
