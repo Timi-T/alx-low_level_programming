@@ -27,5 +27,5 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is zero\n", n, lastdigit);
 	}
-	return (0);
+	return (0)
 }
