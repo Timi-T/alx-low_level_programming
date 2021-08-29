@@ -16,7 +16,7 @@ int main(void)
 			putchar(44);
 			putchar(32);
 		}
-		else 
+		else
 		{
 			putchar(i);
 		}
