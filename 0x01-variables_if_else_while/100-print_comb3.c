@@ -13,7 +13,7 @@ int main(void)
 	{
 		for (j = 49; j <= 57; j++)
 		{
-			if (i+j != j+i && i != j)
+			if (ij = ji || i != j)
 			{
 				putchar(i);
 				putchar(j);
