@@ -13,14 +13,18 @@ int main(void)
 	{
 		for (j = 49; j <= 57; j++)
 		{
-			if (ij = ji || i != j)
+			if (i < j)
 			{
 				putchar(i);
 				putchar(j);
-				putchar(44);
-				putchar(32);
+				if (i != 56 || (i == 56 && j != 57))
+				{
+					putchar(44);
+					putchar(32); 
+				}
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
-}	
+}
