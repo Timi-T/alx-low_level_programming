@@ -2,12 +2,11 @@
 
 /**
  * main - check the code for ALX School students.
- *
+ * print_alphabet - function to print alphabets
  * Return: Always 0.
  */
 
 void print_alphabet(void);
-/*function to print_alphabet*/
 void print_alphabet(void)
 {
 	char i;
