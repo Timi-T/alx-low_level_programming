@@ -6,6 +6,7 @@
  */
 int main(void)
 {
-	printf("Holberton\n");
+	printf("_putchar\n");
+	fprintf(stderr, "ope");
 	return (0);
 }
