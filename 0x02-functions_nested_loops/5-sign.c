@@ -2,19 +2,19 @@
 
 int print_sign(int n)
 {
-	if (c < 0)
+	if (n < 0)
 	{
-		_putchar("\+");
+		_putchar(43);
 		return (1);
 	}
-	if (c == 0)
+	else if(n == 0)
 	{
 		_putchar(0);
 		return (0);
 	}
-	if (c > 0)
+	else
 	{
-		_putchar("\-");
+		_putchar(45);
 		return (-1);
 	}
 }
