@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * main - check the code for ALX School students.
+ * _islower - to check if islower
+ *
+ * @c - input from user
  *
  * Return: Always 0.
  */

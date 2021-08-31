@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _isalpha - to check if islower
+ *
+ * @c - input from user
+ *
+ * Return: Always 0.
+ */
+
 int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
