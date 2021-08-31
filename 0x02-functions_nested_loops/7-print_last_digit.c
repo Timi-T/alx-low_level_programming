@@ -4,16 +4,12 @@
  *
  * @c:  input from user
  *
- * @i: lastdigit
- *
  * Return: Always 0.
  */
 
 int print_last_digit(int c)
 {
-	int i;
-
-	i = c % 10;
-	_putchar(i);
-	return (0);
+	c = c % 10;
+	_putchar(c);
+	return (c);
 }
