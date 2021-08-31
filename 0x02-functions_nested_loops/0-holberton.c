@@ -7,6 +7,6 @@
 int main(void)
 {
 	printf("_putchar\n");
-	fprintf(stderr, "ope");
+	fprintf(stderr, "[Anything]");
 	return (0);
 }
