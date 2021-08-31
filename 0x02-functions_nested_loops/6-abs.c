@@ -7,10 +7,8 @@
  * Return: Always 0.
  */
 
-int _abs(int)
+int _abs(int c)
 {
-	int c;
-
 	if (c < 0)
 	{
 		c = (-1 * c);
@@ -19,4 +17,5 @@ int _abs(int)
 	{
 		c = c;
 	}
+	return (0);
 }
