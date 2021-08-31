@@ -2,7 +2,7 @@
 /**
  * _islower - to check if islower
  *
- * @c - input from user
+ * @c:  input from user
  *
  * Return: Always 0.
  */
