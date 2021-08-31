@@ -2,19 +2,12 @@
 
 int _isalpha(int c)
 {
-	char i;
-
-	for (i = 'a' || i = 'A'; i < 'z' || i ='Z'; i++)
-        {
-                if (c == i)
-                {
-                        return (1);
-		}
-		else
-		{
-			return (0);
-		}
+	if (c == char c)
+	{
+		return (1);
 	}
-        return (0);
+	else
+	{
+		return (0);
+	}
 }
-
