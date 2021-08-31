@@ -4,7 +4,7 @@ int print_sign(int n)
 {
 	if (c < 0)
 	{
-		_putchar("+");
+		_putchar("\+");
 		return (1);
 	}
 	if (c == 0)
@@ -14,7 +14,7 @@ int print_sign(int n)
 	}
 	if (c > 0)
 	{
-		_putchar("-");
+		_putchar("\-");
 		return (-1);
 	}
 }
