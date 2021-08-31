@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * print_sign - fucntion 
+ * print_sign - fucntion
+ * n - input 
+ * Return: Always 0
  */
 int print_sign(int n)
 {
