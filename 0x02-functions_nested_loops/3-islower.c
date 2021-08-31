@@ -7,7 +7,6 @@
 
 int _islower(int c)
 {
-	int c;
 	char i;
 	char j;
 
