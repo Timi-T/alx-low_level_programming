@@ -15,3 +15,8 @@ char print_alphabet(void)
         putchar('\n');
         return (i);
 }
+int main(void)
+{
+	printf("\n");
+	return (0);	
+}
