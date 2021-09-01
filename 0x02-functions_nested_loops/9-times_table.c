@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * times_table - function 9 times table
  *
  * Return: Always 0 (Success)
  */
@@ -24,5 +24,5 @@ void times_table(void)
 			}
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }	
