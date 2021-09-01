@@ -7,9 +7,9 @@
  * Return: Always 0.
  */
 
+int _abs(int c);
 int print_last_digit(int c)
 {
 	c = _abs(c) % 10;
-	_putchar(c);
 	return (c);
 }
