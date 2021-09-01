@@ -1,14 +1,15 @@
 #include <stdio.h>
 /**
+ * main - Entry point
  *
+ * @n: numbers
  *
- *
+ * return: always 0
  */
 
 int main(void)
 {
 	int n;
-	int i;
 
 	for (n = 0; n < 1024; n++)
 	{
