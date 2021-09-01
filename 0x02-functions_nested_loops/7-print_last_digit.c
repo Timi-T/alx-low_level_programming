@@ -18,5 +18,6 @@ int print_last_digit(int c)
 		c = c % 10;
 	}
 	_putchar('\n');
-	return (cc);
+	return (c);
+	return (c);
 }
