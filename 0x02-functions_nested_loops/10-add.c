@@ -4,16 +4,12 @@
  *
  * @a: first number
  * @b: second number
- * @i: addition of both numbers
  *
- * Retutn: always 0
+ * Return: Always 0
  *
  */
 
 int add(int a, int b)
 {
-	int i;
-
-	i = a + b;
-	return (i);
+	return (a + b);
 }
