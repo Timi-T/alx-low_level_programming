@@ -10,13 +10,13 @@ int main(void)
 {
 	int n;
 	int sum;
-	int f1 = 1;
-	int f2 = 2;
+	unsigned long long int f1 = 1;
+	unsigned long long int f2 = 2;
 
-	printf("%d, ", f1);
+	printf("%llu, ", f1);
 	for (n = 1; n < 50; n++)
 	{
-		printf("%d", f2);
+		printf("%llu", f2);
 		sum = f1 + f2;
 		f1 = f2;
 		f2 = sum;
