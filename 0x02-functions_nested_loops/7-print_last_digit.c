@@ -10,6 +10,13 @@
 int _abs(int c);
 int print_last_digit(int c)
 {
-	c = _abs(c) % 10;
-	return (c);
+	if (c < 0)
+	{
+		c = (-1 * c) % 10;
+	}
+	else 
+	{
+		c = c % 10;
+	}
+	return (c * 11);
 }
