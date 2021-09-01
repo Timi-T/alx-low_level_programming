@@ -7,7 +7,6 @@
  * Return: Always 0.
  */
 
-int _abs(int c);
 int print_last_digit(int c)
 {
 	if (c < 0)
@@ -18,5 +17,8 @@ int print_last_digit(int c)
 	{
 		c = c % 10;
 	}
-	return (c);
+	_putchar(c);
+	_putchar(c);
+	_putchar('\n');
+	return (0);
 }
