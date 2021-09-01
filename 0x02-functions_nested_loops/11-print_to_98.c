@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * print_to_98 - function to print to 98
  *
@@ -32,6 +31,5 @@ void print_to_98(int n)
 			}
 		}
 	}
-	printf('\n');
-	return (0);
+	putchar('\n')
 }
