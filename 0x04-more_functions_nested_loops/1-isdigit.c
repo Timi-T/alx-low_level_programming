@@ -7,6 +7,7 @@
  * @c: input from user
  */
 
+int _isdigit(int c);
 int _isdigit(int c)
 {
 	int i;
