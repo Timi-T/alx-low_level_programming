@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * int _isupper - function to check case
+ * _isupper - function to check case
  *
  * Return: Always 0
  *
- * @c:
+ * @c: input from user
  */
 
 int _isupper(int c);
