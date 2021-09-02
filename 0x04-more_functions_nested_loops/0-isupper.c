@@ -10,16 +10,22 @@
 int _isupper(int c)
 {
 	int i;
+	int j;
 
-	for (i = 'A'; i <= 'Z'; i++)
+	for (i = 'A'; i < 'Z'; i++)
 	{
-		if (c = i)
+		if (c == i)
 		{
 			return (1);
 		}
-		else
+	}
+	for (j = 'a'; j < 'z'; j++)
+	{
+		if (c == j)
 		{
 			return (0);
 		}
 	}
+	putchar('\n');
 	return (0);
+}
