@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * int _isupper - function to check case
  *
@@ -26,6 +26,5 @@ int _isupper(int c)
 			return (0);
 		}
 	}
-	putchar('\n');
 	return (0);
 }
