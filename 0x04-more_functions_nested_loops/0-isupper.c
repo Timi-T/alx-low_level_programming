@@ -8,8 +8,8 @@
  * @c:
  */
 
-int _isupper(char c);
-int _isupper(char c)
+int _isupper(int c);
+int _isupper(int c)
 {
 	int i;
 	int j;
