@@ -8,8 +8,8 @@
  * @c: input from user
  */
 
-int _isupper(int c);
-int _isupper(int c)
+void _isupper(void c);
+void _isupper(void c)
 {
 	int i;
 	int j;
