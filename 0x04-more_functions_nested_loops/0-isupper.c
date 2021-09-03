@@ -14,14 +14,14 @@ int _isupper(int c)
 	int i;
 	int j;
 
-	for (i = 'A'; i < 'Z'; i++)
+	for (i = 65; i < 90; i++)
 	{
 		if (c == i)
 		{
 			return (1);
 		}
 	}
-	for (j = 'a'; j < 'z'; j++)
+	for (j = 97; j < 122; j++)
 	{
 		if (c == j)
 		{
