@@ -8,7 +8,18 @@
  */
 
 int _putchar(char c);
-int _strlen(char *s);
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+
+	}
+	return (i);
+}
+
 void _puts(char *str)
 {
 	int i;
