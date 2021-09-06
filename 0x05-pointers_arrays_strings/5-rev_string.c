@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_rev - function to print a string in reverse order
+ * rev_string - function to print a string in reverse order
  *
- * @s: pointer to string
+ * @c: pointer to string
  *
  * Return: always 0
  */
@@ -18,9 +18,9 @@ void rev_string(char *s)
 	{
 	}
 
-	for (i = j - 1; i >= 0;  i--)
+	for (i = j; i >= 0;  i--)
 	{
-		*s = s[i];
+		s[i] = s[i - 1];
 	}
 	_putchar('\n');
 }
