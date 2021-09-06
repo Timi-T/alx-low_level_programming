@@ -2,8 +2,8 @@
 /**
  * _puts - function to print out a string
  *
- * @str: string to be printed out
  * @c: string
+ *
  * Return: always 0
  */
 
