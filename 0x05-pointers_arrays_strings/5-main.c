@@ -7,8 +7,6 @@
  * Return: Always 0.
  */
 
-int _putchar(char c);
-void rev_string(char *s);
 int main(void)
 {
     char s[10] = "My School";

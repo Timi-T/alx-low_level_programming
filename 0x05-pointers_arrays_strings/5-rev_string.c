@@ -3,13 +3,13 @@
 /**
  * print_rev - function to print a string in reverse order
  *
- * @c: pointer to string
+ * @s: pointer to string
  *
  * Return: always 0
  */
 
 int _putchar(char c);
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i;
 	int j;
