@@ -1,14 +1,12 @@
 #include "main.h"
 /**
  * _puts - function to print out a string
- *
- * @str: string to be printed out
- *
- * Return: always 0
- *
  * _strlen - function to print length of string
  *
+ * @str: string to be printed out
  * @s: pointer for the string
+ *
+ * Return: always 0
  */
 
 int _putchar(char c);
