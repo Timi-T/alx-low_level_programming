@@ -4,8 +4,7 @@
 /**
  * print_array - function to print the n number of characters in an array
  *
- * @a: pointer to string
- * @n: number of characters
+ * @c: pointer to string
  *
  * Return: always 0
 */
@@ -15,7 +14,7 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	for (i = 0; a[i] <= n; i++)
+	for (i = 0; i <= n; i++)
 	{
 		_putchar(a[i]);
 		if (i < n)
@@ -24,4 +23,3 @@ void print_array(int *a, int n)
 		}
 	}
 }
-			
