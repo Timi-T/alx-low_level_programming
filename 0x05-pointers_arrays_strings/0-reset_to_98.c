@@ -2,7 +2,7 @@
 /**
  * reset_to_98 - function to reset a variable to 98
  *
- * @*n: address to be updated
+ * @n: address to be updated
  *
  * Return: always 0
  */
