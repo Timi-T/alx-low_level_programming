@@ -22,7 +22,7 @@ void rev_string(char *s)
 	{
 		for (i = j - 1; i >= 0;  i--)
 		{
-			_putchar(s[k]);
+			_putchar(s[i]);
 		}
 	}
 	_putchar('\n');
