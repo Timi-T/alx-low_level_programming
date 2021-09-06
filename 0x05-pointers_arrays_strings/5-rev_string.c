@@ -9,7 +9,7 @@
  */
 
 int _putchar(char c);
-char rev_string(char *s)
+void rev_string(char *s)
 {
 	int i;
 	int j;
@@ -20,7 +20,7 @@ char rev_string(char *s)
 
 	for (i = j - 1; i >= 0;  i--)
 	{
-		return (s[i]);
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
