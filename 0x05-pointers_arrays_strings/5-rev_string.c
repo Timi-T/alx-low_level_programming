@@ -9,7 +9,7 @@
  */
 
 int _putchar(char c);
-char rev_string(char *s)
+void rev_string(char *s)
 {
 	int i;
 	int j;
@@ -17,12 +17,10 @@ char rev_string(char *s)
 	for (j = 0; s[j] != 0; j++)
 	{
 	}
-
-	for (i = j - 1; i >= 0; i--)
+	for (i = j; i > 0; i--)
 	{
-		return (i);
+		s[i] = s[i - 1];
 	}
 	_putchar('\n');
-	return (0);
 }
 
