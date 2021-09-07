@@ -20,6 +20,7 @@ char rev_string(char *s)
 
 	for (i = j - 1; i >= 0; i--)
 	{
+		_putchar(s[i]);
 		return (s[i]);
 	}
 	_putchar('\n');
