@@ -19,7 +19,7 @@ void rev_string(char *s)
 	}
 	for (i = j; i > 0; i--)
 	{
-		s[i - 1] = s[i];
+		s[i] = s[j-i];
 	}
 	_putchar('\n');
 }
