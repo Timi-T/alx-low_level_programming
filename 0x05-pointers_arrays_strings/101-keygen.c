@@ -11,10 +11,10 @@
 int _putchar(char c);
 int main(void)
 {
-	srand((unsigned int)(time(NULL)));
 	int i;
 	char password[10];
 
+	srand((unsigned int)(time(NULL)));
 	for (i = 0; i < 10; i++)
 	{
 		password[i] = rand() % 10;
