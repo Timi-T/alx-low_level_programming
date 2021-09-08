@@ -6,7 +6,7 @@
  * @dest: destination
  * @src: source
  *
- * return: dest
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -17,11 +17,10 @@ char *_strcat(char *dest, char *src)
 	for (len = 0; dest[len] != '\0'; len++)
 	{
 	}
-	for (j = 0; src[j] != '\n'; j++, len++)
+	for (j = 0; src[j] != '\0'; j++, len++)
 	{
 		dest[len] = src[j];
 	}
 	dest[len] = '\0';
-	_putchar('\n');
 	return (dest);
 }
