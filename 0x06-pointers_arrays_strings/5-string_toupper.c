@@ -16,7 +16,7 @@ char *string_toupper(char *c)
 	for (i = 0; c[i] != '0'; i++)
 	{
 	}
-	for (j = 0; j < i; j++)
+	for (j = 0; (j < i && c[j] != '\n'); j++)
 	{
 		if ((c[j] >= 97) && (c[j] <=122))
 		{
