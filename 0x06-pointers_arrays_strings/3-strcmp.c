@@ -13,6 +13,8 @@ int _strcmp(char *s1, char *s2)
 {
 	int i;
 	int j;
+	int a;
+	int b;
 	int len;
 
 	for (i = 0; s1[i] != 0; i++)
@@ -23,29 +25,43 @@ int _strcmp(char *s1, char *s2)
 	}
 
 	if (i > j)
-	for (i = 0; s1[i] != 0; i++)
 	{
+		for (a = 0; s1[a] != 0; a++)
 		{
-			len = s1[i] - s2[i];
-			if (len != 0)
+			if (s1[i] != s2[i] && i <= j)
 			{
+				len = s1[a] - s2[a];
+				if (len != 0)
+				{
+					return (len);
+				}
+			}
+			else
+			{
+				len = s1[i - (i - j)];
 				return (len);
 			}
+
 		}
-	}
-	return (0);
 	}
 	if (j > i)
 	{
-		for (j = 0; s1[j] != 0; i++)
+		for (b = 0; s2[b] != 0; b++)
 		{
-			len = s1[j] - s2[j];
-			if (len != 0)
+			if (s2[j] != s1[j] && j < i)
 			{
+				len = s1[b] - s2[b];
+				if (len != 0)
+				{
+					return (len);
+				}
+			}
+			else
+			{
+				len = s2[j - (j - i)];
 				return (len);
 			}
 		}
-		return (0);
 	}
 	return (0);
 }
