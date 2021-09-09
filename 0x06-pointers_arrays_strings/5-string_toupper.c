@@ -3,6 +3,7 @@
 /**
  * string_toupper - function to convert lowercase strings to upper case
  *
+ * @c: string to be operated on
  * Return: char value
  */
 
@@ -18,7 +19,7 @@ char *string_toupper(char *c)
 	}
 	for (j = 0; (j < i && c[j] != '\n'); j++)
 	{
-		if ((c[j] >= 97) && (c[j] <=122))
+		if ((c[j] >= 97) && (c[j] <= 122))
 		{
 			p[j] = c[j] - 32;
 			c[j] = p[j];
