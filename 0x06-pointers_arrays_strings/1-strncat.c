@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * _strcat - function to join 2 strings
+ * _strncat - function to join 2 strings
  *
+ * @n: number of characters to be copied
  * @dest: destination
  * @src: source
  *
@@ -18,7 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 	}
 	for (j = 0; (j < n && src[j] != '\0'); j++, len++)
-	{	
+	{
 		dest[len] = src[j];
 	}
 	return (dest);
