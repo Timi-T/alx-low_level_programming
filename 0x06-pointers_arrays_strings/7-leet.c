@@ -12,8 +12,8 @@ char *leet(char *c)
 {
 	int i;
 	char *p;
-	p = c;
 
+	p = c;
 	for (i = 0; c[i] != 0; i++)
 	{
 		if (c[i] == 65 || c[i] == 97)
@@ -42,6 +42,5 @@ char *leet(char *c)
 			c[i] = p[i];
 		}
 	}
-	/*_putchar('\n');*/
 	return (c);
 }
