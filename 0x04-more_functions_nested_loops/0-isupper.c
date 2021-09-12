@@ -18,18 +18,6 @@ int _isupper(int c)
 		{
 			return (1);
 		}
-		else
-		{
-			return (0);
-		}
 	}
-	/*for (j = 'a'; j < 'z'; j++)
-	{
-		if (c == j)
-		{
-			return (0);
-		}
-	}
-	_putchar('\n');*/
 	return (0);
 }

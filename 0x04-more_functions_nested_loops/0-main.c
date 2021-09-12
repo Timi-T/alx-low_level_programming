@@ -10,7 +10,7 @@ int main(void)
 {
 	char c;
 
-	c = 'A';
+	c = 'Z';
 	printf("%c: %d\n", c, _isupper(c));
 	c = '9';
 	printf("%c: %d\n", c, _isupper(c));
