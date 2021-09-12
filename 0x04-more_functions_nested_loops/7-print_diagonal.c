@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_diagonal - function to print / diagonally
  *
@@ -6,6 +7,8 @@
  *
  * Return: always 0
  */
+
+int _putchar(char c);
 void print_diagonal(int n)
 {
 	int i;
