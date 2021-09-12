@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagonal - function to print / diagonally
@@ -13,8 +14,8 @@ void print_diagonal(int n)
 {
 	int i;
 	int j;
-
-	for (i = 0; j < n; i++)
+	
+	for (i = 0; i < n; i++)
 	{
 		for (j = n - i; j < n; j++)
 		{
