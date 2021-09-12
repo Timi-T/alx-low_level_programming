@@ -11,22 +11,25 @@
 int _isupper(int c)
 {
 	int i;
-	int j;
 
-	for (i = 'A'; i < 'Z'; i++)
+	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (c == i)
 		{
 			return (1);
 		}
+		else
+		{
+			return (0);
+		}
 	}
-	for (j = 'a'; j < 'z'; j++)
+	/*for (j = 'a'; j < 'z'; j++)
 	{
 		if (c == j)
 		{
 			return (0);
 		}
 	}
-	/*_putchar('\n');*/
+	_putchar('\n');*/
 	return (0);
 }
