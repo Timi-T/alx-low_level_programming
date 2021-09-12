@@ -12,7 +12,7 @@ int main(void)
 
 	c = 'A';
 	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
+	c = '9';
 	printf("%c: %d\n", c, _isupper(c));
 	return (0);
 }
