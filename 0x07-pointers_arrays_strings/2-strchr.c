@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _strchr - function
  * @s: base string4
@@ -12,24 +12,26 @@ char *_strchr(char *s, char c)
 {
 	int i;
 	int j;
-	int a;
-	char **p;
+	int a = 0;
+	char *p;
+	char *q;
 
-	p = &s;
+	q = &c;
+	p = s;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
 	for (j = 0; j < i && s[j] != '\0'; j++)
 	{
-		if (s[j] == c)
+		if (s[j] == *q)
 		{
 			for (a = 0 ; j < i && s[j] != '\0'; j++, a++)
 			{
-				**p = s[j];
-				s[a] = **p;
+				p[a] = s[j];
 			}
-			s[a] = '\0';
+			p[a] = '\0';
+			break;
 		}
 	}
-	return (s);
+	return (p);
 }
