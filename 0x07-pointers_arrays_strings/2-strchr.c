@@ -13,9 +13,9 @@ char *_strchr(char *s, char c)
 	int i;
 	int j;
 	int a;
-	char *p;
+	char **p;
 
-	p = s;
+	p = &s;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
@@ -25,10 +25,11 @@ char *_strchr(char *s, char c)
 		{
 			for (a = 0 ; j < i && s[j] != '\0'; j++, a++)
 			{
-				p[a] = s[j];
+				**p = s[j];
+				s[a] = **p;
 			}
-			p[a] = '\0';
+			s[a] = '\0';
 		}
 	}
-	return (p);
+	return (s);
 }
