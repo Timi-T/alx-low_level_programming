@@ -1,43 +1,31 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strchr - function
- * @s: base string4
- * @c: substring
+ * _strpbrk - function
+ * @s: base string
+ * @accept:: substring
  *
  * Return: char value
  */
 
-int i;
-    int j;
-    int a;
-    int b;
-    int x;
-    char s[] = "hello, world";
-    char c[] = "world";
-    char *p;
-    p = s;
+char *_strpbrk(char *s, char *accept)
+{
+	int i = 0;
+	int j;
+	char *p;
 
-    for (i = 0; s[i] != '\0'; i++)
-    {
-    }
-    for (j = 0; s[j] != '\0'; j++)
-    {
-    }
-    for (a = 0; a < i && s[a] != '\0'; a++)
-    {
-        for (b = 0; b < j && s[b] != '\0'; b++)
-        {
-            if (c[a] == s[b])
-            {
-                for (x = 0; b < i && s[b] != '\0'; b++, x++)
-                {
-                    p[x] = s[b];
-                }
-                p[x] = '\0';
-            }
-        }
-    }
-    printf("%s\n", p);
-    return (0);
-
+	while (s[i] != '\0')
+	{
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				p = &s[i];
+				return (p);
+			}
+		}
+		i++;
+	}
+	return (0);
+}
