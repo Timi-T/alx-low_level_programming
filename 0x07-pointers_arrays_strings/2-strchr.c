@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * _strchr - function
  * @s: base string4
@@ -22,5 +22,5 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
