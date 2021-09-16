@@ -8,25 +8,47 @@
  * Return: always 0
  */
 
-int i = 1;
-int _sqrt_recursion(int n)
+int _sqrt_recursion(int n, int i)
 {
-	if (n < 0)
+	i = 1;
+	if (i >= n)
 	{
 		return (-1);
 	}
-	if (n == 0)
-	{
-		return (0);
-	}
-	if (i == n && n != 1)
-	{
-		return (-1);
-	}
-	if (n / i == i)
+	if (i * i == n)
 	{
 		return (i);
 	}
-	i++;
-	return (_sqrt_recursion(n));
+	else
+		return (_sqrt_recursion(n, i + 1));
 }
+
+
+
+
+
+
+
+
+
+
+/*
+int i = 1;
+int _sqrt_recursion(int n)
+{
+	if (i == 0)
+	{
+		return (-1);
+	}
+	if (i * i == n)
+	{
+		return (i);
+	}
+	else
+	}
+		i = ((i + (n / i)) / 2) - 1;
+		_sqrt_recursion(n);
+		return (i);
+	}
+	return (0);
+}*/
