@@ -4,21 +4,36 @@
  * _sqrt_recursion - function to get square root of a number
  *
  * @n: number to root
- * @i: root of n
  *
  * Return: always 0
  */
 
-int _sqrt_recursion(int n, int i)
+int _sqrt_recursion(int n)
 {
-	if (i > n)
-	{
-		return (-1);
-	}
+	return (subfunction(n, 1));
+}
+
+/**
+ * subfunction - function to handle recursion
+ *
+ * @i: variable to increase
+ * @n: number to root
+ * Return: int value
+ */
+
+int subfunction(int n, int i)
+{
 	if (i * i == n)
 	{
 		return (i);
 	}
+	if (i > n)
+	{
+		return (-1);
+
+	}
 	else
-		return (_sqrt_recursion(n, i + 1));
+	{
+		return (subfunction(n, i + 1));
+	}
 }
