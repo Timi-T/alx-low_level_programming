@@ -4,7 +4,7 @@
  * _sqrt_recursion - function to get square root of a number
  *
  * @n: number to root
- * @: root of n
+ * @i: root of n
  *
  * Return: always 0
  */
@@ -21,5 +21,5 @@ int _sqrt_recursion(int n, int i)
 		return (i);
 	}
 	else
-		return (_sqrt_recursion(n, i ));
+		return (_sqrt_recursion(n, i + 1));
 }
