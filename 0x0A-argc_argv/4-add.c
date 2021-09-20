@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			num = atoi(argv[i]);
-			if (num)
+			if (num < 0 || num >= 0)
 			{
 				sum += num;
 			}

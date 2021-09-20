@@ -1,63 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * @argc: number of arguments
- * @argv: the actual arguments
- *
+ * main - entry point
+ * @argc: number of arguments on command line
+ * @argv: the actual arguments on the command line
  * Return: always 0
  */
-
-int main(int argc, char *argv[])
+/*int main(int argc, char *argv[])
 {
 	int i = 0;
-	int a;
 	int change = atoi(argv[1]);
 
-	if (argc != 2)
-	{
-		printf("%s\n", "Error");
-		return (1);
-	}
 	if (argc == 2)
 	{
 		if (change >= 0)
 		{
 			if (change >= 25)
 			{
-				a = change / 25;
-				if (a != 0)
-				{
-					i = a;
-				}
-				change = change - (25 * a);
+				i = i + (change / 25);
+				change = change - (25 * (change / 25));
 			}
 			if (change >= 10 && change < 25)
 			{
-				a = change / 10;
-				if (a != 0)
-				{
-					i = i + a;
-				}
-				change = change - (10 * a);
+				i = i + (change / 10);
+				change = change - (10 * (change / 10));
 			}
 			if (change >= 5 && change < 10)
 			{
-				a = change / 5;
-				if (a != 0)
-				{
-					i = i + a;
-				}
-				change = change - (5 * a);
+				i = i + (change / 5);
+				change = change - (5 * (change / 5));
 			}
 			if (change > 2 && change < 5)
 			{
-				a = change / 2;
-				if (a != 0)
-				{
-					i = i + a;
-				}
-				change = change - (2 * a);
+				i = i + (change / 2);
+				change = change - (2 * (change / 2));
 			}
 			if (change < 2)
 			{
@@ -69,6 +45,23 @@ int main(int argc, char *argv[])
 		{
 			printf("%d\n", 0);
 		}
+		return (1);
 	}
-	return (0);
-}
+	printf("%s\n", "Error");
+	return (1);
+}*/
+
+int main(int argc, char *argv[])
+{
+	int i = 0;
+	int j;
+	int c[] = {25, 10, 5, 2, 1};
+	int change = atoi(argv[1]);
+
+	if (argc == 2)
+	{
+		if (change > 0)
+		{
+			for (j = 0; j < (sizeof(c)/sizeof(int)); j++)
+			{
+				if (change
