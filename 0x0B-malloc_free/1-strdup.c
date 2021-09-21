@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _stdrup - function to duplicate string
+ * _strdup - function to duplicate string
  *
  * @str: string to be duplicated
  *
@@ -33,5 +33,6 @@ char *_strdup(char *str)
 	{
 		return (p);
 	}
+	free(p);
 	return (0);
 }
