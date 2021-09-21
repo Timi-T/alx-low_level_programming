@@ -10,7 +10,7 @@
  * Return: char value
  */
 
-char *_stdrup(char *str)
+char *_strdup(char *str)
 {
 	int len;
 	int i;
