@@ -19,19 +19,27 @@ char *create_array(unsigned int size, char c)
 	if (size != 0)
 	{
 		p = malloc(size * sizeof(char));
+		for (i = 0; i < size && size != 0; i++)
+		{
+			*(p + i) = c;
+		}
+		*(p + i) = '\0';
+		return (p);
 	}
 
-	for (i = 0; i < size && size != 0; i++)
+	/*for (i = 0; i < size && size != 0; i++)
 	{
 		*(p + i) = c;
-	}
+		}
+	*(p + i) = '\0';
 	if (size == 0)
 	{
-		return (0);
-	}
+		p = NULL;
+		return (p);
+	}*/
 	else
 	{
-		return (p);
+		return (NULL);
 	}
 	return (0);
 }
