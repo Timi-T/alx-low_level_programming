@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	{
 	}
 	total = i + j;
-	p = (char *)malloc((i + j) * sizeof(char));
+	p = (char *)malloc((i + j + 1) * sizeof(char));
 	for (a = 0; a < i; a++)
 	{
 		*(p + a) = *(s1 + a);
@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	*(p + total) = '\0';
 
-	if (s1 != NULL && s2 != NULL)
+	if (s1 != NULL || s2 != NULL)
 	{
 		return (p);
 	}
