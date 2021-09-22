@@ -26,17 +26,6 @@ char *create_array(unsigned int size, char c)
 		*(p + i) = '\0';
 		return (p);
 	}
-
-	/*for (i = 0; i < size && size != 0; i++)
-	{
-		*(p + i) = c;
-		}
-	*(p + i) = '\0';
-	if (size == 0)
-	{
-		p = NULL;
-		return (p);
-	}*/
 	else
 	{
 		return (NULL);
