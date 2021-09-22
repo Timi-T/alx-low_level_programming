@@ -12,14 +12,14 @@
  * Return: always 0
  */
 
-char *argstoint(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
-	int i;
+	int i, j;
 	char *p;
 
 	for (i = 1; i < ac; i++)
 	{
-		p = (char *)malloc(ac * sizeof(char) * strlen(*(av[i])));
+		p = (char *)malloc(ac * sizeof(char) * strlen((av[i])));
 	}
 	for (j = 0; j < ac; j++)
 	{
@@ -33,5 +33,6 @@ char *argstoint(int ac, char **av)
 	{
 		return (p);
 	}
+	free(p);
 	return (0);
 }
