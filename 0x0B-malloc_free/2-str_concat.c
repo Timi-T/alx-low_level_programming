@@ -28,6 +28,14 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; s2[j] != '\0'; j++)
 	{
 	}
+	if (s1 == NULL)
+	{
+		i = 0;
+	}
+	if (s2 == NULL)
+	{
+		total = i;
+	}
 	total = i + j;
 	p = (char *)malloc((total + 1) * sizeof(char));
 	if (p == 0)
