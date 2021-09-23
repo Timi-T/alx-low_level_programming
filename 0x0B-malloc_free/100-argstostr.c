@@ -14,16 +14,21 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, j;
+	int i, a;
 	char *p;
+	int j;
 
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
-		p = (char *)malloc(ac * sizeof(char) * strlen((av[i])));
+		p = (char *)malloc(ac * sizeof(char) * strlen(av[i]));
 	}
-	for (j = 0; j < ac; j++)
+	for (a = 0; a < ac; a++)
 	{
-		*(p + j) = *(av[j]);
+		for (j = 0; j < strlen(av[j]); j++)
+		{
+			*(p + a) = *(av[j]);
+			p++;
+		}
 	}
 	if (ac == 0 && av == NULL)
 	{
