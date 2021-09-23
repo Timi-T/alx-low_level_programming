@@ -15,14 +15,15 @@ void *malloc_checked(unsigned int b)
 	int *p;
 
 	p = (int *)malloc(sizeof(int));
+	if (p == 0)
+	{
+		free(p);
+		exit (98);
+	}
 	if (p != NULL)
 	{
 		*p = b;
 		return (p);
-	}
-	else
-	{
-		exit(98);
 	}
 	return (0);
 }
