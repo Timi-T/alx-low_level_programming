@@ -38,6 +38,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s22 = s2;
 	}
+	if (s1 == NULL && s2 == NULL)
+	{
+		p = malloc(sizeof(char));
+		*p = '\0';
+	}
+	else
+	{
 	p = malloc(sizeof(char) * (sizeof(s11) + strlen(s22)));
 	if (p == NULL)
 	{
@@ -61,6 +68,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		*(p + j) = *(s22 + a);
 	}
 	*(p + total) = '\0';
+	}
 	return (p);
 }
 
