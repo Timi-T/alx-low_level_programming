@@ -18,6 +18,8 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 		return (1);
 	}
+	else
+	{
 		for (i = 1; i < argc; i++)
 		{
 			for (j = 0; j < strlen(argv[i]); j++)
@@ -36,5 +38,6 @@ int main(int argc, char *argv[])
 			sum += num;
 		}
 		printf("%d\n", sum);
+	}
 	return (0);
 }
