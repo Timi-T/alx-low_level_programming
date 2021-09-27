@@ -1,1 +1,1 @@
-#define ABS(X)
+#define ABS(X) do((X) * (-1)) while (X < 0)
