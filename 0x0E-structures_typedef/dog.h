@@ -1,3 +1,6 @@
+#ifndef STRUCT_DOG
+#define STRUCT_DOG
+
 /**
  * struct dog - structure for dogs
  * @name: dog name
@@ -11,3 +14,7 @@ typedef struct dog
 	float age;
 	char *owner;
 }dog_t;
+
+dog_t *new_dog(char *name, float age, char *owner);
+
+#endif
