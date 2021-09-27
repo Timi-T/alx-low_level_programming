@@ -1,1 +1,3 @@
-#define ABS(X) do((X) * (-1)) while (X < 0)
+#ifndef ABS
+#define ABS(X) ((X < 0) ? (-X) : (X))
+#endif
