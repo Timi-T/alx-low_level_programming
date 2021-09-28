@@ -17,13 +17,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	char *realname = copy(name);
 	char *realowner = copy(owner);
-
 	dog_t *p;
 
+	if (name == 0 || age < 0 || owner == 0)
+	{
+		return (0);
+	}
 	p = malloc(sizeof(dog_t));
 	if (p == 0)
 	{
-		return(0);
+		return (0);
 	}
 	p->name = malloc(sizeof(char) * (strlen(name) + 1));
 	if (p->name == 0)
