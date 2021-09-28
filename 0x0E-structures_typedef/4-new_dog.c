@@ -21,14 +21,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *p;
 
 	p = malloc(sizeof(dog_t));
-	if (p == NULL)
+	if (p != NULL)
 	{
-		free(p);
-		return (0);
+		p->name = realname;
+		p->owner = realowner;
+		p->age = age;
 	}
-	p->name = realname;
-	p->owner = realowner;
-	p->age = age;
+	else
+	{
+		free(realname);
+		free(realowner);
+	}
 	return (p);
 }
 
@@ -36,6 +39,8 @@ dog_t *new_dog(char *name, float age, char *owner)
  * copy - function to copy a string from a source to a destination
  *
  * @str: string to be copied
+ *
+ * Return: copy of string
  */
 
 char *copy(char *str)
