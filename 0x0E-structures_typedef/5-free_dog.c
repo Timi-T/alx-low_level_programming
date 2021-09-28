@@ -11,8 +11,5 @@
 
 void free_dog(dog_t *d)
 {
-	dog_t *p;
-
-	p = d;
-	free(p);
+	free(d);
 }
