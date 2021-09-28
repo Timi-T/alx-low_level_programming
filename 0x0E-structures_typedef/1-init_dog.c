@@ -11,11 +11,10 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d == 0)
-	{
-		free(d);
-	}
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+	dog_t *p;
+
+	p = d;
+	p->name = name;
+	p->age = age;
+	p->owner = owner;
 }
