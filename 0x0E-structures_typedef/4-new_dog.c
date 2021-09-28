@@ -21,18 +21,26 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *p;
 
 	p = malloc(sizeof(dog_t));
-	if (p != NULL)
+	if (p == 0)
 	{
-		p->name = realname;
-		p->owner = realowner;
-		p->age = age;
+		return(0);
 	}
-	else
+	p->name = malloc(sizeof(char) * (strlen(name) + 1));
+	if (p->name == 0)
 	{
-		free(realname);
-		free(realowner);
 		free(p);
+		return (0);
 	}
+	p->owner = malloc(sizeof(char) * (strlen(owner) + 1));
+	if (p->owner == 0)
+	{
+		free(p->name);
+		free(p);
+		return (0);
+	}
+	p->name = realname;
+	p->age = age;
+	p->owner = realowner;
 	return (p);
 }
 
