@@ -5,7 +5,6 @@
  * sum_them_all - function to summ all arguments
  *
  * @n: number of arguments to be summed
- * @...: variable number of arguments
  *
  * Return: sum of all arguments
  */
