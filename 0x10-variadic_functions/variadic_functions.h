@@ -1,6 +1,12 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 
+/**
+ * struct sf - structure of data
+ * @c: output format
+ * @s: data type
+ */
+
 typedef struct sf
 {
 	char c;
