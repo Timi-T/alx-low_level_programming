@@ -45,5 +45,5 @@ int main(int argc, char *argv[])
 	}
 	arith = (get_op_func(b))(a, c);
 	printf("%d\n", arith);
-	return (arith);
+	return (0);
 }
