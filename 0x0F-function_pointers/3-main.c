@@ -17,7 +17,13 @@ int main(int argc, char *argv[])
 	char *b;
 	int c;
 	int arith;
+	char *m, *n, *o, *p, *q;
 
+	m = "+";
+	n = "-";
+	o = "*";
+	p = "/";
+	q = "%";
 	if (argc != 4)
 	{
 		printf("%s\n", "Error");
@@ -27,17 +33,17 @@ int main(int argc, char *argv[])
 	b = argv[2];
 	c = atoi(argv[3]);
 
-	printf("%s\n", b);
-	if (*b != + || *b != - || *b != * || *b != / || *b != %)
+	if (*b != *m && *b != *n && *b != *o && *b != *p && *b != *q)
 	{
 		printf("%s\n", "Error");
 		exit(99);
 	}
-	if ((*b == 47 || *b == 37) && c == 0)
+	if ((*b == *p || *b == *q) && c == 0)
 	{
 		printf("%s\n", "Error");
 		exit(100);
 	}
 	arith = (get_op_func(b))(a, c);
+	printf("%d\n", arith);
 	return (arith);
 }

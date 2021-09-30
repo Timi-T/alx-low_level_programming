@@ -4,14 +4,14 @@
 
 /**
  * get_op_func - pointer to function to select operator
- * s - function to link an operator to function
- * 
+ * @s: operator
+ *
  * Return: i dont even know
  */
 
 int (*get_op_func(char *s))(int, int)
 {
-	int i = 0;
+	int i;
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
@@ -21,13 +21,12 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 		};
 
-	while (i < 6)
+	for (i = 0; i < 5; i++)
 	{
-		if (ops[i].op == s)
+		if (*ops[i].op == *s)
 		{
 			return ((ops[i].f));
 		}
-		i++;
 	}
 	return (0);
 }
