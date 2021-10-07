@@ -2,6 +2,15 @@
 #define LISTS_H
 #include <stddef.h>
 
+/**
+ * struct list_t - structure to hold a node for a list
+ *
+ * @str: - string
+ * @len: - length of string
+ * @next: - address of next node
+ *
+ */
+
 typedef struct list_t
 {
 	char *str;
