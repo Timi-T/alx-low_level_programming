@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_listint - function to print a linked list
+ * listint_len - function to print a linked list
  *
  * @h: pointer to the address of the first element of the list
  *
@@ -12,12 +12,12 @@
 
 size_t listint_len(const listint_t *h)
 {
-        size_t count = 0;
-        const listint_t *first = h;
+	size_t count = 0;
+	const listint_t *first = h;
 
 	if (h == NULL)
 	{
-		return (-1);
+		return (0);
 	}
 	while (first != NULL)
 	{
