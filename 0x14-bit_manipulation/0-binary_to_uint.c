@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	while (*s != '\0')
 	{
-		if(*s != 48 && *s != 49)
+		if (*s != 48 && *s != 49)
 		{
 			return (0);
 		}
@@ -43,6 +43,14 @@ unsigned int binary_to_uint(const char *b)
 	return (base_ten);
 }
 
+/**
+ * get_pow - function to get the max power of two
+ *
+ * @max_pow_two: maximum power of two as gotten from the binary to int func
+ *
+ * Return: the maximum power of two
+ */
+
 unsigned int get_pow(int max_pow_two)
 {
 	unsigned int sum;
@@ -50,6 +58,15 @@ unsigned int get_pow(int max_pow_two)
 	sum = (_pow(2, max_pow_two));
 	return (sum);
 }
+
+/**
+ * _pow - function to get the power of a number
+ *
+ * @base: base number
+ * @power: power of
+ *
+ * Return: the power of the base number
+ */
 
 int _pow(int base, unsigned int power)
 {
