@@ -18,6 +18,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t size;
+	size_t size2;
 	char *buf;
 	int fd;
 	int rite;
@@ -37,11 +38,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	rite = write(1, buf, letters);
+	/*while (*buf != '\0')
+	{
+		count++;
+		buf++;
+	}*/
+	size2 = (size_t) size;
+	rite = write(1, buf, size2);
 	if (rite == -1)
 	{
 		return (0);
 	}
 	close(fd);
-	return (size);
+	return (rite);
 }
