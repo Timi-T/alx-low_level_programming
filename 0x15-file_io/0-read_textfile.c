@@ -20,8 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t size;
 	size_t size2;
 	char *buf;
-	int fd;
-	int rite;
+	int fd, rite;
 
 	if (filename == NULL)
 	{
@@ -38,14 +37,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	/*while (*buf != '\0')
-	{
-		count++;
-		buf++;
-	}*/
 	size2 = (size_t) size;
 	rite = write(1, buf, size2);
-	if (rite == -1)
+	if (rite == -1 || rite != (int) size2)
 	{
 		return (0);
 	}
