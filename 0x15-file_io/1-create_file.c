@@ -14,7 +14,7 @@
  * create_file - function to create a file and write to the file
  *
  * @filename: name of file to be created
- * @text_context: content of file
+ * @text_content: content of file
  *
  * Return: one or minus one;
  */
