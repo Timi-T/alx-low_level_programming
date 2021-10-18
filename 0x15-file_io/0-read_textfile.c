@@ -34,6 +34,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	buf  = malloc(letters);
 	size = read(fd, buf, letters);
+	if (size == -1)
+	{
+		return (0);
+	}
 	rite = write(1, buf, letters);
 	if (rite == -1 || rite != let)
 	{
