@@ -35,9 +35,5 @@ int append_text_to_file(const char *filename, char *text_content)
 		}
 		close(fd);
 	}
-	else
-	{
-		return (-1);
-	}
 	return (1);
 }
