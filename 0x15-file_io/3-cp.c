@@ -81,16 +81,10 @@ void print_error(int error_code, int fd, char *src, char *dest)
 	char *error2;
 	char *error3;
 	char *error4;
-	char *src1 = src;
-	char *dest1 = dest;
 
-	printf("%d\n", error_code);
-	printf("%d\n", fd);
-	printf("%s\n", src);
-	printf("%s\n", dest);
 	error1 = "Usage: cp file_from file_to\n";
-	error2 = strcat("Error: Can't read from file ", src1);
-	error3 = strcat("Error: Can't write to ", dest1);
+	error2 = "Error: Can't read from file ";
+	error3 = "Error: Can't write to ";
 	error4 = "Error: Can't close fd ";
 	switch (error_code)
 	{
@@ -99,13 +93,18 @@ void print_error(int error_code, int fd, char *src, char *dest)
 			break;
 		case(98):
 			write(2, error2, strlen(error2));
+			write(2, src, strlen(src));
+			write(2, "\n", 1);
 			break;
 		case(99):
 			write(2, error3, strlen(error3));
+			write(2, dest, strlen(dest));
+			write(2, "\n", 1);
 			break;
 		case(100):
 			write(2, error4, strlen(error4));
 			write(2, &fd, sizeof(fd));
+			write(2, "\n", 1);
 			break;
 	}
 }
