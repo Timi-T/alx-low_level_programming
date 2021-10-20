@@ -67,7 +67,6 @@ void paste_text(char **buf, char *src_file, char *dest_file, int r1)
 		exit(99);
 	}
 	c2 = close(fd2);
-	c2 = -1;
 	if (c2 == -1)
 	{
 		print_error(100, fd2, src, dest);
