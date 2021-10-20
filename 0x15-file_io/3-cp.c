@@ -105,29 +105,9 @@ void print_error(int error_code, int fd, char *src, char *dest)
 			break;
 		case(100):
 			write(2, error4, strlen(error4));
-			print_integer(fd);
-			write(2, "\n", 1);
+			dprintf(2, "%d\n", fd);
 			break;
 	}
-}
-
-void print_integer(int fd)
-{
-	int i;
-	int new;
-	int *new2;
-
-	if (fd == 0)
-	{
-		write(1, &new2, 1);
-	}
-	i = fd;
-	new = (i % 10);
-	new2 = malloc(1);
-	*new2 = new + 48;
-	fd = fd / 10;
-	fd = i - fd;
-	print_integer(fd);
 }
 
 int main(int argc, char *argv[])
