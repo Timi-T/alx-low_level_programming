@@ -39,7 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	size2 = (size_t) size;
-	rite = write(1, buf, size2);
+	rite = write(STDOUT_FILENO, buf, size2);
 	if (rite == -1 || rite != (int) size2)
 	{
 		return (0);
