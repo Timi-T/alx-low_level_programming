@@ -10,5 +10,6 @@ int append_text_to_file(const char *filename, char *text_content);
 void copy_text(char *file_from, char *file_to);
 void print_error(int error_code, int fd, char *src, char *dest);
 void paste_text(char **buf, char *src_file, char *dest_file, int r1);
+void print_integer(int fd);
 
 #endif

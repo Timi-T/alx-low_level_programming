@@ -67,9 +67,9 @@ void paste_text(char **buf, char *src_file, char *dest_file, int r1)
 		exit(99);
 	}
 	c2 = close(fd2);
+	c2 = -1;
 	if (c2 == -1)
 	{
-		printf("%s\n", src_file);
 		print_error(100, fd2, src, dest);
 		exit(100);
 	}
@@ -81,7 +81,9 @@ void print_error(int error_code, int fd, char *src, char *dest)
 	char *error2;
 	char *error3;
 	char *error4;
+	int *fdout = malloc(4);
 
+	*fdout = fd;
 	error1 = "Usage: cp file_from file_to\n";
 	error2 = "Error: Can't read from file ";
 	error3 = "Error: Can't write to ";
@@ -103,10 +105,29 @@ void print_error(int error_code, int fd, char *src, char *dest)
 			break;
 		case(100):
 			write(2, error4, strlen(error4));
-			write(2, &fd, sizeof(fd));
+			print_integer(fd);
 			write(2, "\n", 1);
 			break;
 	}
+}
+
+void print_integer(int fd)
+{
+	int i;
+	int new;
+	int *new2;
+
+	if (fd == 0)
+	{
+		write(1, &new2, 1);
+	}
+	i = fd;
+	new = (i % 10);
+	new2 = malloc(1);
+	*new2 = new + 48;
+	fd = fd / 10;
+	fd = i - fd;
+	print_integer(fd);
 }
 
 int main(int argc, char *argv[])
