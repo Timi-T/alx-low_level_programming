@@ -6,10 +6,10 @@
  * add_dnodeint - function to add a node at the beginning of a linked list
  *
  * @head: head node of linked list
+ * @n: value to be stired at node
  *
  * Return: address of new element
  */
-
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
         dlistint_t *new_node;
@@ -33,5 +33,5 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		*head = new_node;
 		return (new_node);
 	}
-	return (new_node);
+	return (NULL);
 }
