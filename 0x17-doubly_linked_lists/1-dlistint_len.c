@@ -15,10 +15,6 @@ size_t dlistint_len(const dlistint_t *h)
 	const dlistint_t *h_copy = h;
 	size_t count = 0;
 
-	while (h_copy->prev != NULL)
-	{
-		h_copy = h_copy->prev;
-	}
 	while (h_copy != NULL)
 	{
 		count++;
