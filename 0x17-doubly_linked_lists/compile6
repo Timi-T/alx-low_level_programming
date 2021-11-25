@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -Wall -pedantic -Werror -Wextra 6-main.c -std=gnu89 3-add_dnodeint_end.c lists.h 4-free_dlistint.c 6-sum_dlistint.c -o i
