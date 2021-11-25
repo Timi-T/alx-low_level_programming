@@ -15,10 +15,6 @@ size_t print_dlistint(const dlistint_t *h)
 	const dlistint_t *h_copy = h;
 	size_t count = 0;
 
-	while (h_copy->prev != NULL)
-	{
-		h_copy = h_copy->prev;
-	}
 	while (h_copy != NULL)
 	{
 		printf("%d\n", h_copy->n);
