@@ -14,13 +14,23 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int array_size;
 	unsigned long int index;
-	char *value_copy;
+	char *value_copy = NULL;
 	char *key_copy;
 	hash_node_t **array;
 
-	value_copy = malloc((strlen(value)  + 1) * sizeof(char));
+	if (ht->size == 0 || ht->array == NULL)
+		return (0);
+	if (key == NULL)
+		return (0);
+	if (value != NULL)
+		value_copy = malloc((strlen(value)  + 1) * sizeof(char));
+	if (value_copy == NULL)
+		return (0);
 	key_copy = malloc((strlen(key)  + 1) * sizeof(char));
-	strcpy(value_copy, value);
+	if (key_copy == NULL)
+		return (0);
+	if (value != NULL)
+		strcpy(value_copy, value);
 	strcpy(key_copy, key);
 	array = ht->array;
 	array_size = ht->size;
