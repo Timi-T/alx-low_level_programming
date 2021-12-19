@@ -53,14 +53,24 @@ hash_node_t **add_node(hash_node_t **array, unsigned long int index,
 	char const *key, char *value)
 {
 	hash_node_t *new_node;
-	hash_node_t *temp;
-	hash_node_t **array_copy = array;
+        hash_node_t *temp;
+        hash_node_t *array_copy = array[index];
 
-	temp = array_copy[index];
-	new_node = malloc(sizeof(hash_node_t));
-	new_node->key = (char *)key;
-	new_node->value = value;
-	new_node->next = temp;
-	array_copy[index] = new_node;
-	return (array_copy);
+        while (array_copy != NULL)
+        {
+                if (strcmp(key, array_copy->key) == 0)
+                {
+                        free(array_copy->value);
+                        array_copy->value = value;
+                        return (array);
+                }
+                array_copy = array_copy->next;
+        }
+        temp = array[index];
+        new_node = malloc(sizeof(hash_node_t));
+        new_node->key = (char *)key;
+        new_node->value = value;
+        new_node->next = temp;
+        array[index] = new_node;
+        return (array);
 }
