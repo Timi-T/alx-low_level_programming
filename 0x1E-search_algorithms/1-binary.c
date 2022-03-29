@@ -32,7 +32,7 @@ int binary_search(int *array, size_t size, int value)
 	else
 	{
 		if (size > 2)
-			print_message(&(arr[half]), size -half);
+			print_message(&(arr[half]), size - half);
 		return (half);
 	}
 	return (-1);
